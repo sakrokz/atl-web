@@ -1,0 +1,396 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Glass+Antiqua&family=Josefin+Slab&family=Luckiest+Guy&family=Poppins:wght@300&family=Roboto+Condensed&family=Saira:wght@300&family=Titillium+Web:wght@300&family=Wellfleet&display=swap');
+
+
+:root{
+    --bg-clr: #fffaff;
+    --primary-clr: #d8315b;
+    --accent-clr: #3e92cc;
+    --secondary-clr: #CFE1DA;
+}
+
+::selection{
+    background-color: rgba(24, 24, 24,0.8);
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/night.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.hero nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    transition: all .3s ease;
+}
+
+nav ul li a{
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover{
+    color: var(--primary-clr);
+}
+
+nav ul li:hover{
+    transform: translateY(3px);
+}
+
+nav .logo h1{
+    font-size: 40px;
+    color: var(--primary-clr);
+}
+
+.hero .main-text{
+    position: relative;
+    margin: 100px 50px;
+    z-index: 3;
+}
+
+.hero .main-text h1{
+    font-size: 70px;
+}
+
+.hero .main-text span{
+    color: var(--primary-clr);
+}
+
+.hero .main-text p{
+    padding-top: 20px;
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+#hero-btn{
+    width: 140px;
+    height: 50px;
+    background-color: var(--primary-clr);
+    margin: 100px 50px;
+    outline: none;
+    border: none;
+    border-radius: 55px;
+    z-index: 99;
+    position: absolute;
+    top: 470px;
+    transition: all .4s ease;
+
+}
+
+#hero-btn:hover{
+    background-color: #b32246;
+}
+
+#hero-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#city{
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    z-index: 5;
+    height: 90vh;
+}
+
+#rocket{
+    width: 140px;
+    height: 173px;
+    position: absolute;
+    top: 65vh;
+    transform: rotate(235deg);
+    right: -180px;
+}
+
+.info{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    padding: 100px;
+    /* text-align: center; */
+    border-top: 10px solid var(--accent-clr);
+    font-size: 1.5rem;
+    line-height: 30px;
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    position: relative;
+    z-index: 10;
+    font-family: 'Josefin Slab';
+    text-align: center;
+}
+
+.intro-img{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/eiffel-intro.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    top: 100vh;
+}
+
+.info span{
+    font-weight: bold;
+    color: var(--accent-clr);
+    font-family: 'Wellfleet';
+}
+
+.img-main{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-image: url(assets/burj-1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    z-index: 99;
+}
+
+.elms{
+    position: relative;
+    z-index: 100;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+}
+
+.elms .main{
+    font-size: 2.8rem;
+    font-family: 'Wellfleet';
+    font-weight: normal;
+    margin-right: -440px;
+}
+
+.elms .main span{
+    color: var(--primary-clr);
+    font-family: 'Wellfleet';
+}
+
+.elms .sub{
+    width: 800px;
+    padding-top: 50px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+    z-index: 80;
+}
+
+.elms .more{
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--primary-clr);
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    transition: all .4s ease;
+}
+
+.elms .more:hover{
+    background-color: #b32246;
+}
+
+.elms .more a{
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+.burj-khalifa{
+    border-top: 10px solid var(--primary-clr);
+}
+
+.china{
+    background-image: url(assets/wall-china.jpg);
+}
+
+.wall{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding-top: 450px;
+    border-top: 10px solid var(--accent-clr);
+    display: flex;
+    justify-content: end;
+}
+
+.wall .main{
+    z-index: 82;
+    margin-top: -60px;
+}
+
+.wall .overlay{
+    background-color: var(--primary-clr);
+    border-radius: 15px;
+    width: 850px;
+    height: 340px;
+    padding: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: -20px;
+    z-index: 45;
+    opacity: .2;
+}
+
+.wall .more{
+    position: absolute;
+    top: 794px;
+    right: 761px;
+    z-index: 999;
+}
+
+.colo{
+    background-image: url(assets/colosseum.jpg);
+    top: 400%;
+}
+
+.colos{
+    border-top: 10px solid var(--primary-clr);
+    top: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.colos .main{
+    position: absolute;
+    margin-right: 150px;
+}
+
+.colos .sub{
+    margin-top: 60px;
+}
+
+.colos .more{
+    margin-top: 350px;
+    margin-right: 650px;
+    position: absolute;
+    z-index: 999;
+}
+
+.taj{
+    top: 500%;
+    background-image: url(assets/taj-mahal.jpg);
+    background-size: 100%;
+}
+
+.taju{
+    top: 100vh;
+    border-top: 10px solid var(--primary-clr);
+}
+
+.opera{
+    top: 600%;
+    background-image: url(assets/opera.jpg);
+}
+
+.operas{
+    top: 100vh;
+    border-top: 10px solid var(--primary-clr);
+    z-index: 999;
+}
+
+.operas .main{
+    color: #000;
+}
+
+.operas .sub{
+    color: #000;
+}
+
+.eif{
+    background-image: url(assets/eiffel-tower.jpg);
+    top: 700%;
+}
+
+.eifs{
+    top: 100vh;
+    border-top: 10px solid var(--primary-clr);
+}
+
+.operas more{
+    z-index: 999;
+}
+
+.eifs .main{
+    color: #000;
+}
+
+.eif-sub{
+    color: #000;
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #000;
+    top: 100vh;
+}
+
+.eifs .more{
+    z-index: 999;
+}
+
+.footer-m{
+    background-color: #000;
+    top: 800%;
+    background-image: none;
+    height: 10vh;
+    border-top: 10px solid var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.footer-m h3{
+    color: var(--primary-clr);
+}
+
+.footer-m h4{
+    color: var(--primary-clr);
+}
+
+
+
+
